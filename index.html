@@ -14,6 +14,9 @@
   color: #f8f8f2;
   background-color: #272822;
 }
+.width-20px {
+  width: 20px;
+}
 .highlight .err {
   color: #272822;
   background-color: #f92672;
@@ -312,7 +315,7 @@ Nous analyserons d’abord le fonctionnement de la technologie blockchain avant 
 
 <p>Puis il prend un long tube de plastique transparent indestructible possédant une ouverture à une seule extrémité qu’il fixe sur le sol pour accueillir les palets à chaque tour de corvée.</p>
 
-<p><img src="images/image_1.png" alt="image alt text" /></p>
+<p><img src="images/image_1.png" alt=" " /></p>
 
 <p>Pour prévenir toute triche, l’accès au tube n’est possible qu’avec la présence d’au moins la majorité des amis. Cette restriction est permise par la présence d’un couvercle muni de quatre cadenas  à la serrure différente, chacun possédant une clef ouvrant l’un des cadenas.</p>
 
@@ -363,7 +366,7 @@ Nous analyserons d’abord le fonctionnement de la technologie blockchain avant 
 <ul>
 <li><p>Un ensemble de caractères compris entre guillemets est une chaîne de caractère. Par exemple &quot;test&quot;
 Les valeurs numériques attribuées aux chaînes de caractères le sont en utilisant la norme pour le codage de caractère ASCII.</p></li>
-<li><p><img src="images/image_2.png" alt="image alt text" /> où <em>x</em> est une valeur numérique écrite sous forme de chiffres signifie que <em>x</em> est une nombre en base <em>y</em>.</p></li>
+<li><p><img src="images/image_2.png" alt="" /> où <em>x</em> est une valeur numérique écrite sous forme de chiffres signifie que <em>x</em> est une nombre en base <em>y</em>.</p></li>
 <li><p>L’opérateur de concaténation est représenté par le symbole <em>||</em></p></li>
 </ul>
 
@@ -394,7 +397,7 @@ Les valeurs numériques attribuées aux chaînes de caractères le sont en utili
 <li><p>Le calcul de l’empreinte d’un message ( H=h(M) ) doit être simple tandis que l’inverse doit être très complexe.</p></li>
 </ul>
 
-<p><img src="images/image_3.png" alt="image alt text" /></p>
+<p><img src="images/image_3.png" alt="" /></p>
 
 <p><strong>Définition:</strong></p>
 
@@ -423,7 +426,7 @@ Pour deux messages proches, on doit obtenir deux empreintes proches.</p></li>
 
 <p>Soit <em>f</em> la fonction qui à un message <em>m</em> associe une empreinte <em>s</em>.</p>
 
-<p>Soit <em>a</em> la somme de tous les octets composant le message <em>m</em>, et <em>p</em> le produit de ces mêmes octets. <em>a</em> et <em>p</em> sont de simples octets, c’est à dire que <em>a</em> et <em>p</em>sont des valeurs modulo <img src="images/image_4.png" alt="image alt text" />.</p>
+<p>Soit <em>a</em> la somme de tous les octets composant le message <em>m</em>, et <em>p</em> le produit de ces mêmes octets. <em>a</em> et <em>p</em> sont de simples octets, c’est à dire que <em>a</em> et <em>p</em>sont des valeurs modulo <img src="images/image_4.png" alt="" />.</p>
 
 <p><em>s</em> sera obtenu par concaténation (notée <em>|| </em>) de <em>a</em> et <em>p</em>, <em>f(m) = a || p</em></p>
 
@@ -431,19 +434,19 @@ Pour deux messages proches, on doit obtenir deux empreintes proches.</p></li>
 
 <p>Message : &quot;tpe&quot;</p>
 
-<p>Pour <em>m</em> = &quot;tpe&quot; = <img src="images/image_5.png" alt="image alt text" /> (en utilisant la norme ASCII pour le codage de caractères)</p>
+<p>Pour <em>m</em> = &quot;tpe&quot; = <img src="images/image_5.png" alt="" /> (en utilisant la norme ASCII pour le codage de caractères)</p>
 
-<p><img src="images/image_6.png" alt="image alt text" />(la taille de a est limitée à 1 octet soit 8 bits)</p>
+<p><img src="images/image_6.png" alt="" />(la taille de a est limitée à 1 octet soit 8 bits)</p>
 
-<p><img src="images/image_7.png" alt="image alt text" /> (la taille de p est elle aussi limitée à 1 octet)</p>
+<p><img src="images/image_7.png" alt="" /> (la taille de p est elle aussi limitée à 1 octet)</p>
 
-<p>D’où <img src="images/image_8.png" alt="image alt text" /></p>
+<p>D’où <img src="images/image_8.png" alt="" /></p>
 
 <p>En ne modifiant qu’un seul caractère du message, on observe une modification de son empreinte.</p>
 
 <p>Message : &quot;Tpe&quot;</p>
 
-<p><img src="images/image_9.png" alt="image alt text" /></p>
+<p><img src="images/image_9.png" alt="" /></p>
 
 <p>Cet exemple simpliste permet d’illustrer le principe d’une fonction de hachage mais ne représente qu’une piètre fonction de hachage pour une utilisation cryptographique. En effet, le nombre de collisions avec cette fonction est très important : les chaînes de caractères composées des mêmes caractères avec les mêmes nombres d&#39;occurrences possèdent la même image par cette fonction, par exemple, <em>f</em>(&quot;tpe&quot;) = <em>f</em>(“tep”).</p>
 
@@ -460,8 +463,8 @@ Pour un changement minime du message initial, on doit observer une modification 
 &quot;Un message&quot; -&gt; BB7A8142B8290313F2D621D849284A58313A501BC3BA223C21A04D34F84071A4
 En remplaçant le “U” par un “u” dans le message, on a : 
 “un message” -&gt; F024CDC9D8AAD34D1724FD997DE4A14DDC979F06F6B31D1963A4E46F0DC2EDE1
-Or, on a en base 2 (notifié par <img src="images/image_10.png" alt="image alt text" />) en utilisant la norme ASCII pour le codage de caractères : <br>
-<img src="images/image_11.png" alt="image alt text" /></p>
+Or, on a en base 2 (notifié par <img src="images/image_10.png" alt="" />) en utilisant la norme ASCII pour le codage de caractères : <br>
+<img src="images/image_11.png" alt="" /></p>
 
 <p>On observe une grande différence de l’empreinte obtenue pour un changement minime du message.</p>
 
@@ -470,25 +473,25 @@ Or, on a en base 2 (notifié par <img src="images/image_10.png" alt="image alt t
 Connaissant une empreinte H il est impossible de retrouver le message M d’origine, c’est à dire l’antécédent de l’empreinte H par la fonction de hachage h.</li>
 </ul>
 
-<p><img src="images/image_12.png" alt="image alt text" /></p>
+<p><img src="images/image_12.png" alt="" /></p>
 
 <ul>
 <li>Résistantes à la seconde préimage :
 Connaissant un message M et son empreinte H, il est impossible de trouver un autre message M’ tel que M et M’ possèdent la même empreinte, c’est à dire que l’égalité h(M) = h(M’) = H est impossible.</li>
 </ul>
 
-<p><img src="images/image_13.png" alt="image alt text" /></p>
+<p><img src="images/image_13.png" alt="" /></p>
 
 <ul>
 <li>Résistantes aux collisions :
 Il est très difficile de trouver deux messages M et M’ ayant la même empreinte.</li>
 </ul>
 
-<p><img src="images/image_14.png" alt="image alt text" /></p>
+<p><img src="images/image_14.png" alt="" /></p>
 
 <p>La sécurité d’une fonction de hachage dépend en grande partie de la taille de l’empreinte générée (la taille de l’image du message par la fonction de hachage).</p>
 
-<p>En effet celle-ci limite le nombre d’empreintes possibles. Par exemple, une fonction produisant une empreinte de 64 bits n’offre que <img src="images/image_15.png" alt="image alt text" /> empreintes possibles. Les collisions sont donc inévitables du fait du nombre limité d’empreintes possibles. De ce fait, il est possible de trouver des collisions en procédant à des &quot;attaques&quot;.</p>
+<p>En effet celle-ci limite le nombre d’empreintes possibles. Par exemple, une fonction produisant une empreinte de 64 bits n’offre que <img src="images/image_15.png" alt="" /> empreintes possibles. Les collisions sont donc inévitables du fait du nombre limité d’empreintes possibles. De ce fait, il est possible de trouver des collisions en procédant à des &quot;attaques&quot;.</p>
 
 <p><strong>Attaque des anniversaires</strong></p>
 
@@ -496,7 +499,7 @@ Il est très difficile de trouver deux messages M et M’ ayant la même emprein
 
 <p>Cette attaque des anniversaires tient son nom du paradoxe des anniversaires.</p>
 
-<p>Ce &quot;paradoxe&quot; résulte de l’estimation probabiliste du nombre de personnes minimum que l’on doit réunir pour s’assurer que la probabilité de trouver parmis ces individus 2 personnes nées le même jour soit égal à au moins <img src="images/image_16.png" alt="image alt text" />. Il ne s’agit pas d’un paradoxe dans le sens logique du terme, il n’y a pas de contradiction logique, mais dans le sens où le résultat de cette estimation contredit l’intuition qui tend à surestimer le nombre d’individus à réunir pour obtenir une telle probabilité.</p>
+<p>Ce &quot;paradoxe&quot; résulte de l’estimation probabiliste du nombre de personnes minimum que l’on doit réunir pour s’assurer que la probabilité de trouver parmis ces individus 2 personnes nées le même jour soit égal à au moins <img src="images/image_16.png" alt="" />. Il ne s’agit pas d’un paradoxe dans le sens logique du terme, il n’y a pas de contradiction logique, mais dans le sens où le résultat de cette estimation contredit l’intuition qui tend à surestimer le nombre d’individus à réunir pour obtenir une telle probabilité.</p>
 
 <p>Démonstration :</p>
 
@@ -504,33 +507,33 @@ Il est très difficile de trouver deux messages M et M’ ayant la même emprein
 
 <ul>
 <li>Quand on est en présence de 2 individus on a :
-<img src="images/image_17.png" alt="image alt text" /></li>
+<img src="images/image_17.png" alt="" /></li>
 </ul>
 
 <p>Pour que le deuxième individu ne soit pas né le même jour que le premier, il y a 364 dates possibles dans l’année, c’est à dire la totalité des dates possibles soit 365 auxquelles on soustrait celle de la naissance du premier individu.</p>
 
 <ul>
 <li><p>Quand on est en présence de 3 individus on a :
-<img src="images/image_18.png" alt="image alt text" />
+<img src="images/image_18.png" alt="" />
 Quand on est 3 individus, le troisième doit avoir son anniversaire un jour différents des 2 autres, c’est à dire un des 363 jours restants.</p></li>
 <li><p>En présence de <em>n</em> individus on a :<br>
-<img src="images/image_19.png" alt="image alt text" />
+<img src="images/image_19.png" alt="" />
   Pour <em>n</em> individus, on réitère le même raisonnement : on décrémente de 1 le nombre de dates possibles.</p></li>
 </ul>
 
 <p>On a donc la probabilité <em>p’</em>(A) que le groupe compte au moins deux individus nés le même jour : <em>p’</em>(A) = 1 - <em>p</em>(A)</p>
 
-<p>En réalisant l’application numérique, on obtient qu’à partir de 23 individus réunis, la probabilité <em>p’</em>(A) que le groupe compte au moins 2 personnes nées le même jour dépasse <img src="images/image_20.png" alt="image alt text" />.</p>
+<p>En réalisant l’application numérique, on obtient qu’à partir de 23 individus réunis, la probabilité <em>p’</em>(A) que le groupe compte au moins 2 personnes nées le même jour dépasse <img src="images/image_20.png" alt="" />.</p>
 
-<p>Comme nous l’avons dit, l’attaque des anniversaires tire son nom de ce &quot;paradoxe des anniversaires&quot;. En effet, comme pour les dates d’anniversaires, il y a un nombre maximal d’empreintes possibles, par exemple, une fonction produisant une empreinte de 64 bits n’offre “que” <img src="images/image_21.png" alt="image alt text" /> empreintes possibles. Ainsi on peut de la même manière exprimer la probabilité <em>p</em>(H) que toutes les empreintes d’une population de <em>n</em> empreintes choisis aléatoirement soient différentes en fonction de la taille <em>b</em> en bits de l’empreinte.</p>
+<p>Comme nous l’avons dit, l’attaque des anniversaires tire son nom de ce &quot;paradoxe des anniversaires&quot;. En effet, comme pour les dates d’anniversaires, il y a un nombre maximal d’empreintes possibles, par exemple, une fonction produisant une empreinte de 64 bits n’offre “que” <img src="images/image_21.png" alt="" /> empreintes possibles. Ainsi on peut de la même manière exprimer la probabilité <em>p</em>(H) que toutes les empreintes d’une population de <em>n</em> empreintes choisis aléatoirement soient différentes en fonction de la taille <em>b</em> en bits de l’empreinte.</p>
 
-<p><img src="images/image_22.png" alt="image alt text" /></p>
+<p><img src="images/image_22.png" alt="" /></p>
 
 <p>On a donc la probabilité <em>p’</em>(H) que la population d’empreintes étudiées compte au moins deux empreintes identiques : <em>p’</em>(H) = 1 - <em>p</em>(H)</p>
 
-<p>Ainsi il est possible d’estimer le nombre moyen d’essais à effectuer pour trouver une collision en utilisant l’attaque des anniversaires. Par exemple, on peut dresser un tableau donnant le nombre de messages à essayer en moyenne pour avoir une probabilité <em>p</em>(H) égale à au moins <img src="images/image_23.png" alt="image alt text" />.</p>
+<p>Ainsi il est possible d’estimer le nombre moyen d’essais à effectuer pour trouver une collision en utilisant l’attaque des anniversaires. Par exemple, on peut dresser un tableau donnant le nombre de messages à essayer en moyenne pour avoir une probabilité <em>p</em>(H) égale à au moins <img src="images/image_23.png" alt="" />.</p>
 
-<p><img src="images/image_24.png" alt="image alt text" /></p>
+<p><img src="images/image_24.png" alt="" /></p>
 
 <p>Ces valeurs illustrent ce qui était intuitif : plus la taille de l’empreinte est importante, plus il est dur de trouver une collision par l’attaque des anniversaires. Avec l’évolution constante de la puissance de calcule des ordinateurs, la taille des empreintes utilisées augmente pour maintenir un niveau de sécurité élevé. Aujourd’hui, les fonctions de hachage les plus répandues utilisent des empreintes d’une taille souvent supérieur à 256 bits. Par exemple la fonction de hachage SHA-256, que nous expliciterons plus tard, produit des empreinte de 256 bits bien que des versions de cette même fonction offrant des empreintes plus ou moins longues existent.</p>
 
@@ -543,7 +546,7 @@ Quand on est 3 individus, le troisième doit avoir son anniversaire un jour diff
 <p>On découpe le message initial en blocs sur lesquels on opère séquentiellement avec une fonction de compression (f) qui se trouve au cœur de la fonction de hachage. Cette fonction de compression modifie un tampon de taille n contenant des valeurs de hachage intermédiaires.
 Certaines fonctions de hachage peuvent se voir utilisées avec un vecteur d’initialisation (IV), c’est à dire un ensemble de valeurs qui sont utilisées pour initialiser la fonction de hachage en fournissant un premier état du tampon contenant l’état de la fonction de hachage. Il est à noter qu’un vecteur d’initialisation peut être utilisé comme une clé pour des systèmes d’authentification. Cependant toutes les fonctions de hachage ne proposent pas l’utilisation de vecteur d’initialisation, il n’est pas toujours possible de modifier l’état initial de la fonction de hachage.</p>
 
-<p><img src="images/image_25.png" alt="image alt text" /></p>
+<p><img src="images/image_25.png" alt="" /></p>
 
 <ul>
 <li><p>f: la fonction de compression</p></li>
@@ -564,7 +567,7 @@ Certaines fonctions de hachage peuvent se voir utilisées avec un vecteur d’in
 
 <p>Nous pouvons maintenant revenir à la blockchain en elle-même, plus précisément à sa structure.</p>
 <h2 id='structure-de-la-blockchain'>Structure de la blockchain</h2>
-<p><img src="images/image_26.png" alt="image alt text" /></p>
+<p><img src="images/image_26.png" alt="" /></p>
 
 <p>Fig.1 Structure d’une blockchain</p>
 
@@ -576,14 +579,14 @@ Certaines fonctions de hachage peuvent se voir utilisées avec un vecteur d’in
 
 <p>Or on ne peut pas modifier la donnée d’entrée d’une fonction de hachage sans modifier son empreinte et il est impossible pour une valeur de hachage donnée, de construire un message ayant cette valeur de hachage, d’où un bloc ne peut être modifié sans invalider les blocs suivants. Cette propriété permet de garantir l’authenticité de toutes les informations de la chaîne.</p>
 
-<p><img src="images/image_27.png" alt="image alt text" /></p>
+<p><img src="images/image_27.png" alt="" /></p>
 
 <p>Fig.2 Arbre de hachage</p>
 
 <p>Où :</p>
 
 <ul>
-<li><p>Hash  <img src="images/image_28.png" alt="image alt text" /> correspond à l’empreinte de l’objet x contenu dans le bloc y par la fonction de hachage.</p></li>
+<li><p>Hash  <img src="images/image_28.png" alt="" /> correspond à l’empreinte de l’objet x contenu dans le bloc y par la fonction de hachage.</p></li>
 <li><p>hash(x) correspond à une fonction de hachage</p></li>
 <li><p>Lorsqu’une fonction hash(x) est précisée, il s’agit de la valeur attribuée au hash indiqué sur la ligne supérieure</p></li>
 </ul>
@@ -601,11 +604,11 @@ La redondance et la dispersion des moyens de stockage et de diffusion rendent pr
 En effet, l’importante redondance et la dispersion des moyens de stockage et de diffusion réduisent très fortement les probabilités que tous les noeuds du réseau, les machines partageant l’information, soient inaccessibles au même instant. Ce qui offre une tolérance à la panne.</p></li>
 </ul>
 
-<p><img src="images/image_29.png" alt="image alt text" /></p>
+<p><img src="images/image_29.png" alt="" /></p>
 
 <p>Fig. 3 : Réseau centralisé</p>
 
-<p><img src="images/image_30.png" alt="image alt text" /></p>
+<p><img src="images/image_30.png" alt="" /></p>
 
 <p>Fig. 4 : Réseau décentralisé</p>
 <h3 id='gouvernance-decentralisee-et-probleme-des-generaux-byzantins-le-systeme-de-consensus'>Gouvernance décentralisée et problème des généraux byzantins : le système de consensus</h3>
@@ -648,7 +651,7 @@ Ainsi la gouvernance de la blockchain ne s’appuie pas sur une unique entité q
 <p>La preuve de travail ou Proof-of-Work consiste en la réalisation d’un travail complexe pour obtenir le droit d’ajouter un bloc. Le travail demandé est asymétrique : il est difficile mais possible à effectuer, mais facile à vérifier.</p>
 
 <p>Ce système de validation de blocs est le plus répandu à l’heure actuelle, étant notamment utilisé par les crypto-monnaies Bitcoin et Ethereum qui sont les deux plus populaires.
-Par exemple, le Bitcoin utilise un algorithme de preuve de travail inspiré du système Hashcash. Pour valider un bloc, le mineur, c’est à dire le nœud du réseau désireux d’ajouter un nouveau bloc, doit ajouter dans le bloc un nonce, il s’agit d’un nombre aléatoire qui ne sera utilisé qu’une seule fois, et calculer le hash du bloc. Le mineur répète l’opération jusqu’à obtenir un hash commençant par le nombre de zéros demandé, c’est dire inférieur à une valeur donnée. Actuellement le hash doit être inférieur à <img src="images/image_31.png" alt="image alt text" /> pour que le bloc puisse être ajouté sur la blockchain Bitcoin.</p>
+Par exemple, le Bitcoin utilise un algorithme de preuve de travail inspiré du système Hashcash. Pour valider un bloc, le mineur, c’est à dire le nœud du réseau désireux d’ajouter un nouveau bloc, doit ajouter dans le bloc un nonce, il s’agit d’un nombre aléatoire qui ne sera utilisé qu’une seule fois, et calculer le hash du bloc. Le mineur répète l’opération jusqu’à obtenir un hash commençant par le nombre de zéros demandé, c’est dire inférieur à une valeur donnée. Actuellement le hash doit être inférieur à <img src="images/image_31.png" alt="" /> pour que le bloc puisse être ajouté sur la blockchain Bitcoin.</p>
 
 <p>Cependant cette catégorie d’algorithme de validation de blocs implique une forte consommation énergétique du fait des nombreux calculs nécessaires à l’ajout d’un bloc.</p>
 
@@ -667,7 +670,7 @@ Ce système de validation de bloc est encore peu répandue mais des acteurs d’
 
 <p>Pour plus de simplicité, on crée une fonction qui prend en paramètre une chaîne de caractère, lui applique la fonction SHA-256 de la librairie hashlib et retourne son résultat, soit le hash de la chaîne de caractère en entrée.</p>
 
-<p><img src="images/image_32.png" alt="image alt text" /></p>
+<p><img src="images/image_32.png" alt="" /></p>
 
 <p>Dans la création de notre blockchain, nous allons commencer par définir ce à quoi nos blocs vont ressembler, sur quel modèle ils seront créés. </p>
 
@@ -679,7 +682,7 @@ Ce système de validation de bloc est encore peu répandue mais des acteurs d’
 
 <p>Nous définissons une méthode de classe permettant de calculer le hash du bloc à sa création.</p>
 
-<p><img src="images/image_33.png" alt="image alt text" /></p>
+<p><img src="images/image_33.png" alt="" /></p>
 
 <p><em>Classe d’un bloc</em></p>
 
@@ -714,7 +717,7 @@ Nous l’appellerons <em>add_block</em>.</p>
 <p>Cette méthode fait passer chaque bloc de la chaîne excepté le bloc en position 0, (en effet ce dernier est toujours valide, il ne dépend d’aucun bloc, étant le premier) et note les positions des bloc non valides qu’elle retourne sous forme de liste.
 Nous l’appellerons <em>check_chain_integrity</em>.</p>
 
-<p><img src="images/image_34.png" alt="image alt text" /></p>
+<p><img src="images/image_34.png" alt="" /></p>
 
 <p><em>Classe de la blockchain</em></p>
 
@@ -722,7 +725,7 @@ Nous l’appellerons <em>check_chain_integrity</em>.</p>
 
 <p>Elle prend en argument la donnée à inclure dans le nouveau bloc et retourne un nouveau bloc contenant cette donné et &quot;0&quot; pour valeur du hash du précédent bloc. Cette valeur est arbitraire et n’a pas d’importance.</p>
 
-<p><img src="images/image_35.png" alt="image alt text" /></p>
+<p><img src="images/image_35.png" alt="" /></p>
 
 <p><em>Création du premier bloc d’une chaîne</em></p>
 
@@ -730,13 +733,13 @@ Nous l’appellerons <em>check_chain_integrity</em>.</p>
 
 <p>La fonction prends un bloc (objet de classe bloc) en paramètre.</p>
 
-<p><img src="images/image_36.png" alt="image alt text" /></p>
+<p><img src="images/image_36.png" alt="" /></p>
 
 <p><em>Création d’une nouvelle blockchain</em></p>
 
 <p>On définit une fonction permettant de créer un nouveau bloc valide pour être ajouté à la blockchain.</p>
 
-<p><img src="images/image_37.png" alt="image alt text" /></p>
+<p><img src="images/image_37.png" alt="" /></p>
 
 <p><em>Création du bloc suivant dans la chaîne</em></p>
 
@@ -744,23 +747,23 @@ Nous l’appellerons <em>check_chain_integrity</em>.</p>
 
 <p>Pour commencer nous importons notre code précédemment écrit dans un fichier nommé &quot;blockchain.py&quot;. Ceci étant fait, nous pouvons créer notre premier bloc qui contiendra la chaîne de caractères “Un nouveau bloc ! ”, et notre blockchain utilisant le bloc précédemment créé comme premier bloc.</p>
 
-<p><img src="images/image_38.png" alt="image alt text" /></p>
+<p><img src="images/image_38.png" alt="" /></p>
 
 <p>Nous disposons maintenant d’une blockchain… qui ne contient qu’un unique bloc, ce qui ne nous permet pas de réaliser notre essai. Nous allons donc en ajouter 20 autres qui contiendront chacun la chaîne de caractère &quot;Encore un nouveau bloc!&quot;.</p>
 
-<p><img src="images/image_39.png" alt="image alt text" /></p>
+<p><img src="images/image_39.png" alt="" /></p>
 
 <p>C’est fait, notre blockchain contient maintenant 21 blocs.</p>
 
 <p>Nous pouvons maintenant modifier l’un des blocs, nous modifierons le 3ème bloc de la chaîne. Nous retirons le caractère &quot;!&quot; de la chaîne de caractères qu’il contient.</p>
 
-<p><img src="images/image_40.png" alt="image alt text" /></p>
+<p><img src="images/image_40.png" alt="" /></p>
 
 <p>Le 3ème bloc de la chaîne a bien été modifié.</p>
 
 <p>Nous appelons maintenant la méthode check_chain_integrity de l’objet blockchain pour vérifier la validité des blocs de la chaîne.</p>
 
-<p><img src="images/image_41.png" alt="image alt text" /></p>
+<p><img src="images/image_41.png" alt="" /></p>
 
 <p>Cette méthode renvoie que le 3ème bloc de la chaîne, soit celui que nous avons modifié, est non valide.</p>
 
@@ -794,7 +797,7 @@ Le système de consensus et de validation de bloc par Proof-of-Work, le plus ré
 Par exemple, la blockchain Bitcoin fonctionnant avec un consensus Proof-of-Work consomme plus d’énergie que 159 pays dans monde pris individuellement parmis lesquels l’Irlande et l’Islande mais aussi le Luxembourg. Sa consommation représente 6,74% de la consommation électrique française.</p></li>
 </ul>
 
-<p><img src="images/image_42.png" alt="image alt text" /></p>
+<p><img src="images/image_42.png" alt="" /></p>
 
 <p>En orange les pays dont la consommation électrique est inférieure à celle de la blockchain Bitcoin</p>
 <h2 id='bilan'>Bilan</h2>
@@ -939,11 +942,11 @@ Dans ce cas, l’émetteur chiffre avec sa clef privée l’empreinte par une fo
 
 <p>Cette méthode de signature utilisant les fonctions de hachage est très répandue et est utilisée dans la plupart des blockchains, notamment Bitcoin et Ethereum.</p>
 
-<p><img src="images/image_43.png" alt="image alt text" /></p>
+<p><img src="images/image_43.png" alt="" /></p>
 
 <p>Fig. 5 : Signature d’un message</p>
 
-<p><img src="images/image_44.png" alt="image alt text" /></p>
+<p><img src="images/image_44.png" alt="" /></p>
 
 <p>Fig. 6 :Vérification de la signature</p>
 
@@ -970,7 +973,7 @@ Il s’agit de la quantité à transférer de crypto-monnaie.</p></li>
 Il s’agit d’une signature numérique comme celles que nous avons abordés précédemment. Elle tient lieu de preuve qui permet d’authentifier l’auteur de la transaction. </p></li>
 </ul>
 
-<p><img src="images/image_45.png" alt="image alt text" /></p>
+<p><img src="images/image_45.png" alt="" /></p>
 
 <p>Fig. 7 : Structure</p>
 <h3 id='validite-d-une-transaction'>Validité d’une transaction</h3>
@@ -1014,16 +1017,16 @@ Comme nous l’avons vu en abordant les systèmes de consensus, l’instance de 
 
 <p>Nous avons alors choisi quatre crypto-monnaies qui pour nous ont su se démarquer des autres ou montrer leur importance, mais bien d’autres auraient tout autant pu apparaître dans ces quatre exemples. </p>
 
-<p>Le premier exemple de crypto-monnaie est à l’ évidence le Bitcoin <img src="images/image_46.png" alt="image alt text" />; elle est en quelque sorte la base. Elle fonctionne sur une blockchain qui n’apporte pas d’amélioration à une blockchain basique puisqu’elle fut la première blockchain à exister. Et bien qu’elle n’a que peu ou pas d’avantages face à d’autres crypto-monnaies sa capitalisation boursière est la plus élevée.
+<p>Le premier exemple de crypto-monnaie est à l’ évidence le Bitcoin <img class="width-20px" src="images/image_46.png" alt="" />; elle est en quelque sorte la base. Elle fonctionne sur une blockchain qui n’apporte pas d’amélioration à une blockchain basique puisqu’elle fut la première blockchain à exister. Et bien qu’elle n’a que peu ou pas d’avantages face à d’autres crypto-monnaies sa capitalisation boursière est la plus élevée.
 Elle est de 139 956 949 885,64$ à l’heure où nous écrivons ces lignes.</p>
 
-<p>Le second exemple est Ethereum<img src="images/image_47.png" alt="image alt text" />, qui en plus d’être une crypto-monnaie fonctionnant de la même manière que le Bitcoin avec un algorithme de Proof-of-Work, est une plateforme décentralisée décrite par le <em>New York Times</em> telle qu’ &quot;<em>un seul ordinateur partagé qui est géré par le réseau d&#39;utilisateurs et sur lequel les ressources sont réparties et payées par ether (la crypto-monnaie de la plateforme Ethereum).</em>&quot;
+<p>Le second exemple est Ethereum<img class="width-20px" src="images/image_47.png" alt="" />, qui en plus d’être une crypto-monnaie fonctionnant de la même manière que le Bitcoin avec un algorithme de Proof-of-Work, est une plateforme décentralisée décrite par le <em>New York Times</em> telle qu’ &quot;<em>un seul ordinateur partagé qui est géré par le réseau d&#39;utilisateurs et sur lequel les ressources sont réparties et payées par ether (la crypto-monnaie de la plateforme Ethereum).</em>&quot;
 Elle permet de mettre en place une multitude d’applications décentralisées appelées smart-contracts et dApps que nous aborderons plus tard. Sa capitalisation boursière est de 83 191 037 905,66$.</p>
 
-<p>Un troisième exemple est Monero <img src="images/image_48.png" alt="image alt text" />. C’est une crypto-monnaie toujours sur le système de consensus de Proof-of-Work offrant un anonymat accru. En effet contrairement à Ethereum et Bitcoin, les transactions sont totalement obfusquées sur la blockchain et ainsi ne peuvent être reliées à un utilisateur particulier ou à une identitée réelle.
+<p>Un troisième exemple est Monero <img class="width-20px" src="images/image_48.png" alt="" />. C’est une crypto-monnaie toujours sur le système de consensus de Proof-of-Work offrant un anonymat accru. En effet contrairement à Ethereum et Bitcoin, les transactions sont totalement obfusquées sur la blockchain et ainsi ne peuvent être reliées à un utilisateur particulier ou à une identitée réelle.
 Sa capitalisation boursière est de 3 553 448 191,73$.</p>
 
-<p>Enfin un quatrième et dernier exemple est Nxt <img src="images/image_49.png" alt="image alt text" />, une plateforme décentralisée très similaire à la plateforme Ethereum, mais proposant plusieurs systèmes d’emblées pour les utilisateurs finaux tels qu’un système pour créer un vote, la possibilité de créer ses propres tokens, la possibilité de lancer une campagne de financement participatif. Mais Nxt a une autre particularité : elle fonctionne sur un système de consensus de Proof-of-stake réglant le problème de la forte consommation électrique engendrée par le consensus par preuve de travail et fut la première à implémenter ce dernier, dès 2013. Sa capitalisation boursière est aujourd’hui de 204 539 572,58$.</p>
+<p>Enfin un quatrième et dernier exemple est Nxt <img class="width-20px" src="images/image_49.png" alt="" />, une plateforme décentralisée très similaire à la plateforme Ethereum, mais proposant plusieurs systèmes d’emblées pour les utilisateurs finaux tels qu’un système pour créer un vote, la possibilité de créer ses propres tokens, la possibilité de lancer une campagne de financement participatif. Mais Nxt a une autre particularité : elle fonctionne sur un système de consensus de Proof-of-stake réglant le problème de la forte consommation électrique engendrée par le consensus par preuve de travail et fut la première à implémenter ce dernier, dès 2013. Sa capitalisation boursière est aujourd’hui de 204 539 572,58$.</p>
 
 <p>Les fortes capitalisations boursières attestent la masse monétaire que les crypto-monnaies représentent et ainsi la confiance que certains acteurs leur accordent.</p>
 <h2 id='utilisation-generale'>Utilisation générale</h2><h3 id='utilisation-pratique'>Utilisation pratique</h3>
@@ -1045,7 +1048,7 @@ Sa capitalisation boursière est de 3 553 448 191,73$.</p>
 
 <p>La forte volatilité provoquée par la spéculation sur les cours des crypto-monnaies décourage également les commerçants à accepter les paiements réalisés à l’aide de ces monnaies numériques. Par exemple, le cours de l’emblématique Bitcoin en Décembre dernier a fait un bond de plus de 10 000€ (+320% en seulement quatre jours)  avant de s’écrouler de 5 000€ à nouveau.</p>
 
-<p><img src="images/image_50.png" alt="image alt text" /></p>
+<p><img src="images/image_50.png" alt="" /></p>
 
 <p><em>Cours du Bitcoin de Mars 2017 à Janvier 2018.</em></p>
 
@@ -1219,7 +1222,7 @@ Il est très difficile d’arrêter tous les noeuds du réseau, ce qui offre une
 
 <p>Les smart-contracts permettent d’envisager la réalisation d’applications décentralisées, appelées dApps (pour decentralized applications), hébergées sur la blockchain.</p>
 
-<p><img src="images/image_51.png" alt="image alt text" /></p>
+<p><img src="images/image_51.png" alt="" /></p>
 
 <p>Fig. 8 : Fonctionnement résumé des <em>smart-contracts</em></p>
 <h2 id='les-dapps'>Les <em>dApps</em></h2>
@@ -1290,7 +1293,7 @@ La technologie blockchain a-t-elle encore un avenir avec l’apparition des tech
 
 <p><strong>L’opération binaire ET (And) :</strong> Il s’agit d’une opération binaire qui renvoit VRAI si et seulement si ses deux entrées le sont, on peut représenter ses sorties dans une table de vérité :</p>
 
-<p><img src="images/image_76.png" alt="image alt text" /></p>
+<p><img src="images/image_76.png" alt="" /></p>
 
 <p>On la notera ⋀</p>
 
@@ -1300,42 +1303,42 @@ La technologie blockchain a-t-elle encore un avenir avec l’apparition des tech
 
 <p>Table de vérité de l’opération OU Exclusif :</p>
 
-<p><img src="images/image_52.png" alt="image alt text" /></p>
+<p><img src="images/image_52.png" alt="" /></p>
 
 <p><strong>L’opération de décalage binaire:</strong></p>
 
 <p>Pour un décalage de x bits vers la droite comme illustré, tous les bits sont décalés de x bits vers le bit de poid le plus faible. Les x bits de poids le plus faible de la donnée sont perdus, on ajoute x 0 pour maintenir la taille de la donnée comme représenté sur l’illustration. Le principe est le même pour un décalage vers la gauche, le bit de poids le plus fort.</p>
 
-<p>On notera <img src="images/image_53.png" alt="image alt text" /> le décalage de n bits vers la droite dans la donnée x où n est un entier positif inférieur ou égal à la longueur en bits de la donnée x.</p>
+<p>On notera <img src="images/image_53.png" alt="" /> le décalage de n bits vers la droite dans la donnée x où n est un entier positif inférieur ou égal à la longueur en bits de la donnée x.</p>
 
 <p>Par exemple:</p>
 
-<p><img src="images/image_54.png" alt="image alt text" /></p>
+<p><img src="images/image_54.png" alt="" /></p>
 
 <p><strong>L’opérateur de rotation binaire: </strong></p>
 
-<p><img src="images/image_55.png" alt="image alt text" /></p>
+<p><img src="images/image_55.png" alt="" /></p>
 <p>Pour une rotation de x bits vers la droite, comme pour un décalage, tous les bits sont décalés de x bits vers le bit de poid le plus faible. A l’inverse du décalage binaire, les bits sont rejetés à gauche comme représenté sur l’illustration. Le principe est le même pour une rotation vers la gauche, le bit de poids le plus fort.</p>
 
-<p>On notera <img src="images/image_56.png" alt="image alt text" /> la rotation de n bits vers la droite dans la donnée x.</p>
+<p>On notera <img src="images/image_56.png" alt="" /> la rotation de n bits vers la droite dans la donnée x.</p>
 
 <p>Par exemple:</p>
 
-<p><img src="images/image_57.png" alt="image alt text" /></p>
+<p><img src="images/image_57.png" alt="" /></p>
 
 <p><strong>Complément binaire à 1 :</strong> Il s’agit de la valeur obtenue en inversant tous les bits (transformation des 0 en 1 et inversement) d’un nombre.
 On notera ¬ x le complément binaire à 1 de x.</p>
 
 <p>La fonction SHA-256 utilise la construction de Merkle-Damgård expliquée précédemment.</p>
 
-<p><img src="images/image_58.png" alt="image alt text" /></p>
+<p><img src="images/image_58.png" alt="" /></p>
 
 <p>où</p>
 
 <ul>
 <li><p>le message initial est complété en utilisant la méthode du renforcement de Merkle-Damgård pour atteindre une taille multiple de 512 bits</p></li>
 <li><p>le message est découpé en blocs, chaque bloc a une taille b égale à 512 bits pour être traiter par la fonction de compression f</p></li>
-<li><p>la fonction de compression modifie un tampon de taille N égale à 256 bits contenant les valeurs intermédiaires de hachage <img src="images/image_59.png" alt="image alt text" /> (8 mots de 32 bits)</p></li>
+<li><p>la fonction de compression modifie un tampon de taille N égale à 256 bits contenant les valeurs intermédiaires de hachage <img src="images/image_59.png" alt="" /> (8 mots de 32 bits)</p></li>
 </ul>
 
 <p>SHA-256 fonctionne en deux étapes: le prétraitement et le calcul de l’empreinte.</p>
@@ -1354,15 +1357,15 @@ On notera ¬ x le complément binaire à 1 de x.</p>
 
 <p>Puis k bits &quot;0&quot; tel que k soit le plus petit entier naturel positif strict tel que l + 1 + k + 64 =  n * 512 où n est un autre entier naturel positif strict.</p>
 
-<p>On ajoute ensuite <img src="images/image_75.png" alt="image alt text" /> sur les 64 bits restants pour obtenir M tel que M = n * 512</p>
+<p>On ajoute ensuite <img src="images/image_75.png" alt="" /> sur les 64 bits restants pour obtenir M tel que M = n * 512</p>
 
 <p>L’ajout de la taille du message est appelé renforcement de Merkle-Damgård, il ramène la résistance de l’algorithme à la résistance de la fonction de compression.</p>
 
 <p>Le message complété est alors découpé en k blocs de 512 bits.</p>
 
-<p>On initialise ensuite les valeurs de hachage <img src="images/image_60.png" alt="image alt text" />):</p>
+<p>On initialise ensuite les valeurs de hachage <img src="images/image_60.png" alt="" />):</p>
 
-<p><img src="images/image_61.png" alt="image alt text" /></p>
+<p><img src="images/image_61.png" alt="" /></p>
 
 <p>Une fois cette étape réalisée, le prétraitement est achevé et le calcul de l’empreinte peut avoir lieu.</p>
 
@@ -1373,39 +1376,39 @@ On notera ¬ x le complément binaire à 1 de x.</p>
 <p>Pour le traitement, on utilisera:</p>
 
 <ul>
-<li><p>un tableau de 64 mots de 32 bits notés <img src="images/image_62.png" alt="image alt text" /></p></li>
+<li><p>un tableau de 64 mots de 32 bits notés <img src="images/image_62.png" alt="" /></p></li>
 <li><p>dix-huit variables de 32 bits:</p>
 
 <ul>
 <li>huit variables de travail notés a, b, c, d, e, f, g, h
 Ce sont des mots de 32 bits utilisées dans le calcul des hachés</li>
-<li>huit variables contenant les valeurs de hachage, notées <img src="images/image_63.png" alt="image alt text" /> initialisées précédemment.
-Ces variables contiendront à chaque itération de nouvelles valeurs de hachage, <img src="images/image_64.png" alt="image alt text" /> puis l’empreinte de M après la dernière itération, dans <img src="images/image_65.png" alt="image alt text" />.</li>
-<li>deux variables temporaires <img src="images/image_66.png" alt="image alt text" /></li>
+<li>huit variables contenant les valeurs de hachage, notées <img src="images/image_63.png" alt="" /> initialisées précédemment.
+Ces variables contiendront à chaque itération de nouvelles valeurs de hachage, <img src="images/image_64.png" alt="" /> puis l’empreinte de M après la dernière itération, dans <img src="images/image_65.png" alt="" />.</li>
+<li>deux variables temporaires <img src="images/image_66.png" alt="" /></li>
 </ul></li>
-<li><p><img src="images/image_67.png" alt="image alt text" /></p></li>
+<li><p><img src="images/image_67.png" alt="" /></p></li>
 </ul>
 
 <p>On traite successivement les n blocs du message M.</p>
 
 <p>Pour i = 0 à N</p>
 
-<p>1. On remplit le tableau <img src="images/image_68.png" alt="image alt text" /> :  <img src="images/image_69.png" alt="image alt text" /></p>
+<p>1. On remplit le tableau <img src="images/image_68.png" alt="" /> :  <img src="images/image_69.png" alt="" /></p>
 
 <p>2. On initialise les variables de travail a,b, c, d, e, f, g et h avec les valeurs de hachage de l’itération précédente:
-    <img src="images/image_70.png" alt="image alt text" /></p>
+    <img src="images/image_70.png" alt="" /></p>
 
 <p>3. Pour t de 0 à 63:
-    <img src="images/image_71.png" alt="image alt text" /></p>
+    <img src="images/image_71.png" alt="" /></p>
 
-<p><img src="images/image_72.png" alt="image alt text" /></p>
+<p><img src="images/image_72.png" alt="" /></p>
 
 <p>4. On calcule les valeurs de hachage intermédiaires:
-    <img src="images/image_73.png" alt="image alt text" /></p>
+    <img src="images/image_73.png" alt="" /></p>
 
 <p>Après n itérations de ces étapes permettant de traiter tous les blocs du message, on obtient l’empreinte de M par la concaténation, c’est à dire en mettant bout à bout, des valeurs</p>
 
-<p><img src="images/image_74.png" alt="image alt text" /></p>
+<p><img src="images/image_74.png" alt="" /></p>
 <h1 id='sources'>Sources</h1>
 <p><strong>La technologie blockchain :</strong>
 Inspiration pour l’analogie :
